@@ -6,7 +6,7 @@ This project aimed to develop a robust CNN model for the classification of breas
 
 The project used the dataset sourced from Kaggle's "Breast Histopathology Images" collection, specifically focusing on the 162 whole-mount slide images of Breast Cancer (BCa) specimens scanned at 40x, sourced from the Cancer Genome Atlas (TCGA), Invasive Ductal Carcinoma (IDC). This dataset was used for training and testing the suggested models.
 
-The team explored multiple models for classification, including RESNet50, EfficientNetB7, and VGG16. Each model had different numbers of parameters, freeze options, learning rates, optimizers, epochs, and batch sizes. The models were evaluated based on various metrics such as accuracy, precision, recall, F1 score, and precision for non-cancer samples.
+The team explored multiple models for classification, including RESNet50, EfficientNetB7, and VGG16. Each model had different numbers of parameters, freeze options, and learning rates. The models were evaluated based on various metrics such as accuracy, precision, recall, F1 score, and precision for non-cancer samples.
 
 After thorough experimentation and analysis, VGG16 with freezing pretrained layers was chosen as the final model. The decision was based on several factors:
 

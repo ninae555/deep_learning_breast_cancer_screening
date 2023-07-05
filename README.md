@@ -8,6 +8,8 @@ The project used the dataset sourced from Kaggle's "Breast Histopathology Images
 
 The team explored multiple models for classification, including RESNet50, EfficientNetB7, and VGG16. Each model had different numbers of parameters, freeze options, and learning rates. The models were evaluated based on various metrics such as accuracy, precision, recall, F1 score, and precision for non-cancer samples.
 
+### Findings
+
 After thorough experimentation and analysis, VGG16 with freezing pretrained layers was chosen as the final model. The decision was based on several factors:
 
 Test Score: VGG16 achieved the highest test score for predicting cancer tissues among all the models. This indicates that the model performed well in accurately classifying the breast histopathology images.

@@ -21,3 +21,5 @@ Model Robustness: VGG16 exhibited a smaller gap between the training and validat
 Model Complexity: VGG16 was the least complex model among the options considered, with fewer parameters to train. This factor can contribute to faster training times and potentially better generalization on unseen data.
 
 In conclusion, the project successfully developed a powerful CNN model using VGG16 with freezing pretrained layers for the classification of breast histopathology images. This model showed promising results in terms of accuracy, precision, and recall, making it a suitable candidate for assisting pathologists in making accurate and efficient diagnoses.
+
+VGG16 Accuracy:  86.23%,

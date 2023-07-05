@@ -2,26 +2,20 @@
 #### Data Science, Columbian College of Arts & Sciences, George Washington University
 #### Nina Ebensperger, Muhannad Alwhebie, Nammin Woo
 
-Breast cancer is one of the leading causes of death among women worldwide. Early and accurate detection plays a vital role in improving patient outcomes and survival rates. Histopathology, the microscopic examination of breast tissue samples, is a fundamental diagnostic tool for identifying and classifying breast cancer. However, the manual analysis of histopathology images is a labor-intensive and time-consuming task prone to human error.
+This project aimed to develop a robust CNN model for the classification of breast histopathology images. By leveraging advancements in machine learning and deep learning techniques, the goal was to create a reliable system capable of distinguishing between benign and malignant breast tissue samples, ultimately improving diagnostic accuracy and efficiency in cancer detection.
 
-In recent years, advancements in machine learning and deep learning techniques have shown promising results in automating the analysis of histopathology images. Convolutional Neural Networks (CNNs), a type of deep learning algorithm specifically designed for image analysis, have demonstrated remarkable success in various computer vision tasks. Leveraging CNNs for the automated classification of breast histopathology images holds immense potential for improving diagnostic accuracy, reducing subjectivity, and enhancing the efficiency of cancer detection.
+The project used the dataset sourced from Kaggle's "Breast Histopathology Images" collection, specifically focusing on the 162 whole-mount slide images of Breast Cancer (BCa) specimens scanned at 40x, sourced from the Cancer Genome Atlas (TCGA), Invasive Ductal Carcinoma (IDC). This dataset was used for training and testing the suggested models.
 
-In this project, the focus is on developing a robust CNN model for the classification of breast histopathology images using the dataset sourced from Kaggle's "Breast Histopathology Images" collection. By training a CNN on this dataset, the goal is to create a reliable system capable of distinguishing between benign and malignant breast tissue samples.
+The team explored multiple models for classification, including RESNet50, EfficientNetB7, and VGG16. Each model had different numbers of parameters, freeze options, learning rates, optimizers, epochs, and batch sizes. The models were evaluated based on various metrics such as accuracy, precision, recall, F1 score, and precision for non-cancer samples.
 
-Specifically, the 162 whole-mount slide images of Breast Cancer (BCa) specimens scanned at 40x, sourced from the Cancer Genome Atlas (TCGA), Invasive Ductal Carcinoma (IDC), is used for training and test the suggested model.
+After thorough experimentation and analysis, VGG16 with freezing pretrained layers was chosen as the final model. The decision was based on several factors:
 
-Through this endeavor, the aim is to contribute to the field of medical image analysis by developing a powerful CNN model that can assist pathologists in making accurate and efficient diagnoses. By automating the classification process, the project aims to provide valuable support to medical professionals, ultimately improving patient outcomes and advancing the fight against breast cancer.
+Test Score: VGG16 achieved the highest test score for predicting cancer tissues among all the models. This indicates that the model performed well in accurately classifying the breast histopathology images.
 
-*This topic was origined from Kaggle
+Precision and Recall: Although the F1 score of VGG16 did not outperform RESNet50, the precision and recall of VGG16 were superior. Precision and recall are crucial metrics in medical diagnosis, as they indicate the ability to minimize false positives and false negatives, respectively.
 
-### <u> Summary of Final model  </u>
+Model Robustness: VGG16 exhibited a smaller gap between the training and validation tests compared to RESNet50. This suggests that VGG16 had more consistent performance and was less prone to overfitting the training data.
 
-**VGG16 with freezing pretrained layers have been chosen as Final model.**
+Model Complexity: VGG16 was the least complex model among the options considered, with fewer parameters to train. This factor can contribute to faster training times and potentially better generalization on unseen data.
 
-1. The test score predicting Cancer tissues was the highest out of all models.​
-
-2. While the F1 score did not out-perform the score of the RESNet, the recall and the precision were still out-performing that of the RESNet. ​
-
-3. Model Robustness: The gap between the training and validation tests were smaller with VGG16 than in RESNet meaning VGG16 has more consistent performance. ​
-
-4. Model Complexity: VGG16 is the least complex with having less parameters to train
+In conclusion, the project successfully developed a powerful CNN model using VGG16 with freezing pretrained layers for the classification of breast histopathology images. This model showed promising results in terms of accuracy, precision, and recall, making it a suitable candidate for assisting pathologists in making accurate and efficient diagnoses.

@@ -16,7 +16,7 @@ Through this endeavor, the aim is to contribute to the field of medical image an
 
 ### <u> Summary of Final model  </u>
 
-**VGG16 with freezing pretrained layers have chosen as Final model.**
+**VGG16 with freezing pretrained layers have been chosen as Final model.**
 
 1. The test score predicting Cancer tissues was the highest out of all models.​
 

@@ -13,3 +13,15 @@ Specifically, the 162 whole-mount slide images of Breast Cancer (BCa) specimens 
 Through this endeavor, the aim is to contribute to the field of medical image analysis by developing a powerful CNN model that can assist pathologists in making accurate and efficient diagnoses. By automating the classification process, the project aims to provide valuable support to medical professionals, ultimately improving patient outcomes and advancing the fight against breast cancer.
 
 *This topic was origined from Kaggle
+
+### <u> Summary of Final model  </u>
+
+**VGG16 with freezing pretrained layers have chosen as Final model.**
+
+1. The test score predicting Cancer tissues was the highest out of all models.​
+
+2. While the F1 score did not out-perform the score of the RESNet, the recall and the precision were still out-performing that of the RESNet. ​
+
+3. Model Robustness: The gap between the training and validation tests were smaller with VGG16 than in RESNet meaning VGG16 has more consistent performance. ​
+
+4. Model Complexity: VGG16 is the least complex with having less parameters to train
